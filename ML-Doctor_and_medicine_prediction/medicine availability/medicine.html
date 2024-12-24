@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Prediction</title>
+    <link rel="stylesheet" href="medicine.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Medicine<span>Prediction</span></div>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/index.html">About</a>
+            <a href="/services/service.html">Services</a>
+            <a href="/contact/contact.html">Contact</a>
+            <a href="/services/service.html" class="predict-now">Predict Now</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <div class="main-content">
+        <div class="container">
+            <h2>Check Medicines Availability</h2>
+            
+            <label for="hospital-select">Select Hospital:</label>
+            <select id="hospital-select">
+                <option value="">--Select Hospital--</option>
+                <option value="Banglore Govn Hospital">Banglore Govn Hospital</option>
+                <option value="Mandya Govn Hospital">Mandya Govn Hospital</option>
+                <option value="Mysore Govn Hospital">Mysore Govn Hospital</option>
+            </select>
+            
+            <label for="medicine-select">Select Medicine:</label>
+            <select id="medicine-select">
+                <option value="">--Select Medicine--</option>
+                <option value="Dolo 650">Dolo 650</option>
+                <option value="Paracetamol">Paracetamol</option>
+                <option value="Dart">Dart</option>
+            </select>
+            
+            <button onclick="predictAvailability()">Predict Medicine Availability</button>
+            
+            <div id="error-message" class="error-message"></div>
+            <div id="loading" class="loading-circle"></div>
+            <div id="availability-result" class="availability-result"></div>
+        </div>
+        
+        <div class="doctor-image">
+            <img src="med1.png" alt="Doctor" />
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="footer-content">
+            <h6>&#169;2024 HealthPredict, Inc. All rights reserved</h6>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Patient Portal</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="medicine.js"></script>
+</body>
+</html>
